@@ -16,10 +16,15 @@ public class MyController {
     @Value("${production.property5}")
     private String productionProperty5;
 
+
+    @Value("${app.message}")
+    private  String developmentProperty;
+
     @GetMapping("/properties")
     public String getProperties() {
         return "Common Property 1: " + commonProperty1 +
                 "\nLocal Property 3: " + localProperty3 +
-                "\nProduction Property 5: " + productionProperty5;
+                "\nProduction Property 5: " + productionProperty5
+                +"\n Development Property :"+developmentProperty;
     }
 }
