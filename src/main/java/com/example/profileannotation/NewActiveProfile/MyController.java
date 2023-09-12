@@ -32,4 +32,14 @@ public class MyController {
                 "\nProduction Property 5: " + productionProperty5
                 +"\n Development Property :"+developmentProperty;
     }
+    @GetMapping("/properties")
+    public String getPropertiesAll() {
+        Logger logger= LoggerFactory.getLogger(MyController.class);
+        logger.info("Hello i am from Controller");
+        return "Common Property 1: " + commonProperty1 +
+                "\nLocal Property 3: " + localProperty3 +
+                "\nProduction Property 5: " + productionProperty5
+                +"\n Development Property :"+developmentProperty;
+    }
 }
+
