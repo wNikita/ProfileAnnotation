@@ -34,6 +34,13 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
+
+            <!-- Spring Boot Starter for Logging -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-logging</artifactId>
+            </dependency>
+
     </dependencies>
 
     <!-- Project properties -->
