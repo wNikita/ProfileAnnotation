@@ -10,6 +10,8 @@ public class MyApplication {
         SpringApplication application = new SpringApplication(MyApplication.class);
 
         // Set the active profile
+        application.setAdditionalProfiles("development");
 
+        application.run(args);
     }
 }
